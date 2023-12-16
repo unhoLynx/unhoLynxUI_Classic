@@ -1,0 +1,7 @@
+## Interface: 30402
+## Title: unhoLynxUI_Classic
+## Notes: Improves the default Blizzard UI for my own liking.
+## Author: unhoLynx
+## Version: 0.0.1
+
+core.lua
