@@ -1,6 +1,6 @@
-## Interface: 30402
+## Interface: 11500
 ## Title: unhoLynxUI_Classic
-## Notes: Improves the default Blizzard UI for my own liking.
+## Notes: Tweaks the default UI according to my personal taste.
 ## Author: unhoLynx
 ## Version: 0.0.1
 
