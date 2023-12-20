@@ -18,8 +18,8 @@ CastingBarFrame:ClearAllPoints()
 CastingBarFrame:SetPoint("CENTER",ActionButton6,23,130)
 CastingBarFrame.SetPoint=function()end
 CastingBarFrame:SetScale(1)
-CastingBarFrame.Text:SetAlpha(0)
-CastingBarFrame.Icon:SetAlpha(0)
+CastingBarFrame.Text:SetAlpha(1)
+CastingBarFrame.Icon:SetAlpha(1)
 
 --PLAYER FRAME--
 
@@ -39,7 +39,7 @@ PlayerName:SetAlpha(0)
 
 --TARGET FRAME--
 
-TargetFrame:SetScale(1.1)
+TargetFrame:SetScale(1)
 TargetFrameToT:SetScale(.83)
 TargetFrameToTTextureFrameName:SetAlpha(0)
 TargetFrameSpellBar:SetScale(1.4)
