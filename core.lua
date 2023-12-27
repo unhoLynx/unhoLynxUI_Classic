@@ -7,8 +7,8 @@ print("|cff0000ff= = = = = = = = = = = = = = = = = = = = = = = = = = =")
 
 --GENERAL--
 
-UIErrorsFrame:SetScale(.7)
-UIErrorsFrame:SetAlpha(.5)
+UIErrorsFrame:SetScale(.8)
+UIErrorsFrame:SetAlpha(.8)
 BuffFrame:SetScale(1.2)
 MinimapCluster:SetScale(1.1)
 
@@ -17,9 +17,6 @@ MinimapCluster:SetScale(1.1)
 CastingBarFrame:ClearAllPoints()
 CastingBarFrame:SetPoint("CENTER",ActionButton6,23,130)
 CastingBarFrame.SetPoint=function()end
-CastingBarFrame:SetScale(1)
-CastingBarFrame.Text:SetAlpha(1)
-CastingBarFrame.Icon:SetAlpha(1)
 
 --PLAYER FRAME--
 
@@ -52,20 +49,6 @@ TargetFrameHealthBar:SetPoint("LEFT",7,17)
 TargetFrameHealthBar:SetHeight(18)
 TargetFrameTextureFrameName:ClearAllPoints()
 TargetFrameTextureFrameName:SetPoint("CENTER",TargetFrameHealthBar,0,17)
---TargetFrameTextureFrame.HealthBarTextLeft:SetScale(.85)
---TargetFrameTextureFrame.HealthBarTextLeft:ClearAllPoints()
---TargetFrameTextureFrame.HealthBarTextLeft:SetPoint("RIGHT",TargetFrameBackground,0,6.5)
---TargetFrameTextureFrame.HealthBarTextRight:SetScale(.85)
---TargetFrameTextureFrame.HealthBarTextRight:ClearAllPoints()
---TargetFrameTextureFrame.HealthBarTextRight:SetPoint("LEFT",TargetFrameBackground,0,6.5)
---TargetFrameTextureFrame.ManaBarTextLeft:SetScale(.85)
---TargetFrameTextureFrame.ManaBarTextLeft:SetAlpha(.6)
---TargetFrameTextureFrame.ManaBarTextLeft:ClearAllPoints()
---TargetFrameTextureFrame.ManaBarTextLeft:SetPoint("RIGHT",TargetFrameBackground,0,-6)
---TargetFrameTextureFrame.ManaBarTextRight:SetScale(.85)
---TargetFrameTextureFrame.ManaBarTextRight:SetAlpha(.6)
---TargetFrameTextureFrame.ManaBarTextRight:ClearAllPoints()
---TargetFrameTextureFrame.ManaBarTextRight:SetPoint("LEFT",TargetFrameBackground,0,-6)
 
 --PET FRAME--
 
@@ -96,7 +79,12 @@ for i, v in pairs({
 	ActionBarUpButton,
 	ActionBarDownButton,
 	MainMenuBarPerformanceBarFrame,
-	MainMenuBarMaxLevelBar}) do v:Hide() 
+	MainMenuBarMaxLevelBar,
+	MainMenuMaxLevelBar0,
+	MainMenuMaxLevelBar1,
+	MainMenuMaxLevelBar2,
+	MainMenuMaxLevelBar3
+}) do v:Hide() 
 end
 
 --REPUTATION BAR
@@ -123,7 +111,7 @@ MainMenuExpBar.SetPoint=function()end
 MainMenuBarExpText:SetScale(2)
 MainMenuBarExpText:SetParent(UIParent)
 MainMenuBarExpText:ClearAllPoints()
-MainMenuBarExpText:SetPoint("BOTTOM",UIParent,0,70)
+MainMenuBarExpText:SetPoint("CENTER",UIParent,0,0)
 
 --KEYRING
 
@@ -138,7 +126,7 @@ MainMenuBarBackpackButton:ClearAllPoints()
 MainMenuBarBackpackButton:SetPoint("BOTTOMRIGHT",UIParent,-3,3)
 
 CharacterMicroButton:ClearAllPoints()
-CharacterMicroButton:SetPoint("CENTER",CharacterBag3Slot,-15,55)
+CharacterMicroButton:SetPoint("CENTER",CharacterBag3Slot,-8,50)
 
 --STANCE BAR
 
@@ -299,7 +287,7 @@ local function showMicroMenu()
 		PVPMicroButton,
 		LFGMicroButton,
 		MainMenuMicroButton,
-		HelpMicroButton}) do v:SetScale(0.7) end
+		HelpMicroButton}) do v:SetScale(.9) end
 	for i, v in pairs({
 		CharacterBag3Slot,
 		CharacterBag2Slot,
