@@ -1,4 +1,4 @@
-## Interface: 11500
+## Interface: 11501
 ## Title: unhoLynxUI_Classic
 ## Notes: Tweaks the default UI according to my personal taste.
 ## Author: unhoLynx
